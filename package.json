@@ -2,7 +2,7 @@
   "name": "react-webpack-app",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://kacperbarszczewski.github.io/webdev",
+  "homepage": "https://kacperbarszczewski.github.io/webdev/",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve",
