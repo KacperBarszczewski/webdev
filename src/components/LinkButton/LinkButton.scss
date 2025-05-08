@@ -1,0 +1,34 @@
+/* src/components/Button/Button.scss */
+@use '../../styles/variables';
+
+.button {
+    display: inline-block;
+    font-weight: variables.$font-weight-medium;
+    font-size: 0.9rem;
+    padding: 0.938rem 1rem;
+    border-radius: 0.313rem;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.4);
+
+    &--blue {
+        background: variables.$color-blue;
+        color: variables.$color-white;
+
+        &:hover {
+            background: lighten(variables.$color-blue, 10%);
+        }
+    }
+
+    &--gray {
+        background: lighten(variables.$color-gray, 35%);
+        color: lighten(black, 40%);
+
+        &:hover {
+            background: variables.$color-gray;
+            color: variables.$color-white;
+        }
+    }
+}

@@ -7,10 +7,10 @@ const NavBar = () => {
     return (
         <nav className="navbar">
             <div>
-                <img src={logoImg} alt="Logo" className="navbar-logo" />
+                <img src={logoImg} alt="Logo" className="navbar__logo" />
             </div>
             <div>
-                <img src={hamburgerImg} alt='hamburger' className='hamburger' />
+                <img src={hamburgerImg} alt='hamburger' className='navbar__hamburger' />
             </div>
         </nav>
     );
