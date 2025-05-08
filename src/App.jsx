@@ -1,9 +1,10 @@
 import React from "react";
-import { Navbar } from "./components";
+import { Modal, Navbar } from "./components";
 import { Download, Features, Hero, Questions, Contact, Footer } from "./features";
 
 const App = () => {
   return <>
+  <Modal isOpen={true} />
     <Navbar />
     <Hero />
     <Features />
@@ -11,6 +12,7 @@ const App = () => {
     <Questions />
     <Contact />
     <Footer />
+    
   </>;
 };
 

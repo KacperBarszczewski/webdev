@@ -1,0 +1,79 @@
+@use "src/styles/variables" as *;
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.tabs__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-white;
+    border-radius: 1.875rem;
+    padding: 2.5rem 0;
+    position: relative;
+
+    .modal__close {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        cursor: pointer;
+        z-index: 1001;
+        background: none;
+        border: none;
+
+        img {
+            filter: invert(110%)  contrast(100%);
+        }
+
+
+    }
+
+    &__image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2.188rem;
+
+        img {
+            width: 83%;
+        }
+
+        &__bgObject {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80%;
+            height: 85%;
+            z-index: -1;
+            background-color: $color-blue;
+            border-top-right-radius: calc(infinity * 1px);
+            border-bottom-right-radius: calc(infinity * 1px);
+        }
+    }
+
+    &__text {
+        text-align: center;
+        width: 83%;
+
+        h3 {
+            margin-top: 3rem !important;
+        }
+
+        &__btn {
+            display: none;
+        }
+    }
+
+
+}

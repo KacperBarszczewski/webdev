@@ -1,6 +1,5 @@
 import React from "react";
 import "./MobileNavModal.scss";
-import logo from "../../assets/images/logo-bookmark.svg";
 import iconClose from "../../assets/images/icon-close.svg";
 import logoTwitter from '../../assets/images/icon-twitter.svg';
 import logoFacebook from '../../assets/images/icon-facebook.svg';
@@ -12,7 +11,6 @@ const MobileNavModal = ({ open, onClose }) => {
   return (
     <div className="mobile-modal">
       <div className="mobile-modal__header">
-        {/* <img src={logo} alt="Bookmark logo" className="mobile-modal__logo" /> */}
         <Logo className="mobile-modal__logo" circleColor="#FFF" flagColor="#313750" />
         <button className="mobile-modal__close" onClick={onClose} aria-label="Close menu">
           <img src={iconClose} alt="Close" />
