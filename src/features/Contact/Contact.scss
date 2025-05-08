@@ -26,6 +26,9 @@
 }
 
 .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__input-wrapper {
         background-color: $color-red;
