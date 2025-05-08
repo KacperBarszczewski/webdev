@@ -1,3 +1,5 @@
+@use '../../styles/variables' as *;
+
 .download {
     display: flex;
     flex-direction: column;
@@ -14,6 +16,16 @@
     
         p {
             margin-bottom: 3rem;
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+
+    .download {
+
+        &__contener {
+            width: 30rem;
         }
     }
 }
