@@ -3,6 +3,7 @@ import './TabsSection.scss';
 import imgTab1 from '../../assets/images/illustration-features-tab-1.svg';
 import imgTab2 from '../../assets/images/illustration-features-tab-2.svg';
 import imgTab3 from '../../assets/images/illustration-features-tab-3.svg';
+import LinkButton from '../LinkButton/LinkButton';
 
 const tabs = [
   {
@@ -47,12 +48,16 @@ const TabsSection = () => {
 
       <div className="tabs__content">
         <div className="tabs__content__image">
-        <div className='tabs__content__image__bgObject'></div>
+          <div className='tabs__content__image__bgObject'></div>
           <img src={tabs[activeTab].image} alt="Feature Illustration" />
         </div>
         <div className="tabs__content__text">
           <h3>{tabs[activeTab].contentTitle}</h3>
           <p>{tabs[activeTab].contentText}</p>
+          <div className="tabs__content__text__btn">
+            <LinkButton>More Info</LinkButton>
+          </div>
+
         </div>
       </div>
     </div>

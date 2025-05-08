@@ -83,9 +83,69 @@
       h3{
         margin-top: 3rem !important;
       }
+
+      &__btn{
+        display: none;
+      }
     }
 
 
   }
 
+}
+
+@media screen and (min-width: variables.$breakpoint-desktop) {
+
+  .tabs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    &__nav{
+      flex-direction: row;
+      width: 60%;
+
+      &__button{
+        border: none;
+        border-bottom: solid 1px lightgray;
+
+        &::after{
+          width:100%
+        }
+
+      }
+
+    }
+
+    &__content{
+      flex-direction: row;
+      width: 100%;
+      gap: 7.813rem;
+
+      &__image{
+        flex: 1;
+        width: fit-content;
+        justify-content: end;
+      }
+
+      &__text{
+        flex: 1;
+        text-align: left;
+        width: 100%;
+        
+        p{
+          width: 23rem;
+        }
+
+        &__btn{
+          width:8rem;
+          display: block;
+        }
+      }
+
+
+
+    }
+  }
 }

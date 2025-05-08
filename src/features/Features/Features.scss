@@ -1,3 +1,5 @@
+@use '../../styles/variables' as *;
+
 .features {
     display: flex;
     flex-direction: column;
@@ -17,3 +19,14 @@
         width: 83%;
     }
 }
+
+@media screen and (min-width: $breakpoint-desktop) {
+
+    .features {
+ 
+        &__contener {
+            width: 31%;
+        }
+    }
+}
+
