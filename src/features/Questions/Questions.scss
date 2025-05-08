@@ -1,0 +1,29 @@
+.questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6.25rem;
+
+    &__contener {
+        text-align: center;
+        width: 83%;
+
+        h2 {
+            margin-top: 9.5rem;
+            margin-bottom: 0px;
+        }
+    
+        p {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__contener2 {
+        width: 83%;
+    }
+
+    &__contener3 {
+        width: 7rem;
+        margin-top: 3rem;
+    }
+}

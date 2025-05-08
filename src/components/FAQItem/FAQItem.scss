@@ -1,0 +1,36 @@
+@use '../../styles/variables';
+
+.faq {
+  border-bottom: 1px solid lightgrey;
+  cursor: pointer;
+
+  &__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: variables.$color-dark-blue;
+  }
+
+  &__icon {
+
+    transition: transform 0.3s ease, filter 0.3s ease;
+
+    &--open {
+      transform: rotate(180deg);
+      filter: hue-rotate(90deg) saturate(1);
+    }
+  }
+
+  &__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    opacity: 0;
+
+    &.open {
+      max-height: 500px;
+      opacity: 1;
+    }
+  }
+
+}
