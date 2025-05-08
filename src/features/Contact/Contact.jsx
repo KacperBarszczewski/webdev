@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import './Contact.scss';
 import ErrorIcon from "../../assets/images/icon-error.svg";
 
@@ -8,6 +8,7 @@ const validateEmail = (email) =>
 const Contact = () => {
     const [email, setEmail] = useState("");
     const [error, setError] = useState(false);
+    const [count, setCount] = useState(35000);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -19,10 +20,29 @@ const Contact = () => {
         }
     };
 
+    useEffect(() => {
+        const duration = 20000; 
+        const startTime = Date.now();
+        
+        const interval = setInterval(() => {
+            const elapsed = Date.now() - startTime;
+            
+            if (elapsed >= duration) {
+                setCount(0);
+                clearInterval(interval);
+            } else {
+                const remaining = 35000 - (elapsed / duration) * 35000;
+                setCount(Math.floor(remaining));
+            }
+        }, 50); 
+
+        return () => clearInterval(interval); 
+    }, []);
+
     return (
         <section className='contact' id="contact">
             <div className='contact__contener'>
-                <p>35,000+ ALREADY JOINED</p>
+                <p>{count.toLocaleString()}+ ALREADY JOINED</p>
                 <h2>Stay up-to-date with what we're doing</h2>
 
                 <form className="newsletter" onSubmit={handleSubmit} noValidate>
