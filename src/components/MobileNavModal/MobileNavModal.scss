@@ -1,0 +1,77 @@
+@use "src/styles/variables.scss"as *;
+
+.mobile-modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba($color-dark-blue, 0.95);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  
+    &__header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+  
+    &__logo {
+      height: 2rem;
+      color: white;
+    }
+  
+    &__close {
+      background: none;
+      border: none;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+  
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 2rem;
+  
+      a {
+        color: #fff;
+        font-size: 1.25rem;
+        letter-spacing: 0.15em;
+        text-decoration: none;
+        border: none;
+        background: none;
+        padding:1.5rem 0;
+        width: 100%;
+        text-align: center;
+        font-weight: $font-weight-regular;
+        border-bottom: 1px solid $color-gray;
+  
+        &.mobile-modal__login {
+          border: 2px solid #fff;
+          border-radius: 8px;
+          margin-top: 2rem;
+          padding: .8rem 0;
+        }
+
+        &:first-child {
+          border-top: 1px solid $color-gray;
+        }
+      }
+    }
+  
+    &__socials {
+      display: flex;
+      gap: 3rem;
+      margin-top: auto;
+  
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+  
