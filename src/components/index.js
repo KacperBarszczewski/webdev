@@ -3,3 +3,4 @@ export { default as LinkButton } from './LinkButton/LinkButton';
 export { default as TabsSection } from './TabsSection/TabsSection';
 export { default as Extension } from './Extension/Extension';
 export { default as FAQItem } from './FAQItem/FAQItem';
+export {default as Logo} from './Logo/Logo';
