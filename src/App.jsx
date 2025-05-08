@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar } from "./components";
-import { Download, Features, Hero, Questions } from "./features";
+import { Download, Features, Hero, Questions, Contact } from "./features";
 
 const App = () => {
   return <>
@@ -9,6 +9,7 @@ const App = () => {
     <Features />
     <Download />
     <Questions />
+    <Contact />
   </>;
 };
 
