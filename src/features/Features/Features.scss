@@ -1,0 +1,19 @@
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        margin-top: 9.5rem;
+        margin-bottom: 0px;
+    }
+
+    p {
+        margin-bottom: 3rem;
+    }
+
+    &__contener {
+        text-align: center;
+        width: 83%;
+    }
+}
