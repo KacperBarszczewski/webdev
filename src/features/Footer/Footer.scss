@@ -21,7 +21,7 @@
             color: white;
         }
 
-        a{
+        a {
             color: $color-white;
             text-decoration: none;
             font-size: 0.9rem;
@@ -37,4 +37,23 @@
     }
 
 
+}
+
+
+@media screen and (min-width: $breakpoint-desktop) {
+
+    .footer {
+
+        &__contener {
+            max-width: 69.375rem;
+            flex-direction: row;
+            align-items: center;
+
+            &__socials {
+                margin-left: auto;
+            }
+
+        }
+
+    }
 }

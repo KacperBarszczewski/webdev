@@ -19,7 +19,6 @@ const Footer = () => {
                     <a href="https://www.twitter.com/" target="_blank">
                         <img src={logoTwitter} alt="Twitter" className='footer__contener__socials__img' />
                     </a>
-
                 </div>
             </div>
         </div>
