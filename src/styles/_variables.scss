@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+
+// Kolory główne
+$color-blue: hsl(231, 69%, 60%);
+$color-red: hsl(0, 94%, 66%);
+
+// Kolory neutralne
+$color-gray: hsl(229, 8%, 60%);
+$color-dark-blue: hsl(229, 31%, 21%);
+$color-white: #fff;
+
+// Typografia
+$font-family: 'Rubik', sans-serif;
+$font-size-base: 18px;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+
+// Breakpointy
+$breakpoint-mobile: 375px;
+$breakpoint-desktop: 1440px;
