@@ -1,4 +1,3 @@
-// src/components/Button/Button.jsx
 import React from 'react';
 import './LinkButton.scss';
 

@@ -1,0 +1,19 @@
+.download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__contener {
+        text-align: center;
+        width: 83%;
+
+        h2 {
+            margin-top: 8rem;
+            margin-bottom: 0px;
+        }
+    
+        p {
+            margin-bottom: 3rem;
+        }
+    }
+}

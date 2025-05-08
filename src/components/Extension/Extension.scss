@@ -1,0 +1,30 @@
+.extension {
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+
+    &__container {
+        width: 17.5rem;
+        height: 23rem;
+        display: flex;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.2);
+
+        p{
+            margin: 0;
+        }
+
+        &__line{
+            margin-top: 2.5rem;
+            margin-bottom: 1.875rem
+        }
+
+    }
+
+
+
+}

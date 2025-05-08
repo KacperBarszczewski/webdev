@@ -5,13 +5,14 @@
     display: inline-block;
     font-weight: variables.$font-weight-medium;
     font-size: 0.9rem;
-    padding: 0.938rem 1rem;
+    padding: 0.938rem 0rem;
     border-radius: 0.313rem;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
     transition: background 0.2s, color 0.2s, border 0.2s;
     box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.4);
+    width: 85%;
 
     &--blue {
         background: variables.$color-blue;

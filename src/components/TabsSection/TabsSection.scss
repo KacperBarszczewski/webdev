@@ -19,6 +19,8 @@
       border-top: solid 1px lightgray;
       position: relative;
       text-align: center;
+      
+
 
       &.active {
         color: variables.$color-dark-blue;
@@ -78,7 +80,7 @@
       text-align: center;
       width: 83%;
 
-      h2{
+      h3{
         margin-top: 3rem !important;
       }
     }

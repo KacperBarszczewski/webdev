@@ -51,7 +51,7 @@ const TabsSection = () => {
           <img src={tabs[activeTab].image} alt="Feature Illustration" />
         </div>
         <div className="tabs__content__text">
-          <h2>{tabs[activeTab].contentTitle}</h2>
+          <h3>{tabs[activeTab].contentTitle}</h3>
           <p>{tabs[activeTab].contentText}</p>
         </div>
       </div>
