@@ -53,3 +53,27 @@
         }
     }
 }
+
+@media screen and (min-width: $breakpoint-desktop) {
+
+    .hero {
+        flex-direction: row-reverse;
+        gap: 7.5rem;
+
+
+        &__contener {
+            flex: 1;
+          
+        }
+
+        &__contener2 {
+            flex: 1;
+            margin-left: 10.3rem;
+            text-align: left;
+
+            &__btns {
+                width: 60%;
+            }
+        }
+    }
+}
