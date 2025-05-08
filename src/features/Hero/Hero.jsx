@@ -5,7 +5,7 @@ import { LinkButton } from '../../components';
 
 const Hero = () => {
     return (
-        <div className='hero'>
+        <section className='hero'>
             <div className='hero__contener'>
                 <div className='hero__contener__bgObject'></div>
                 <img src={heroImg} alt='hero img' className='hero__contener__img' />
@@ -19,7 +19,7 @@ const Hero = () => {
                 </div>
             </div>
 
-        </div>
+        </section>
     );
 };
 

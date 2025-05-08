@@ -23,7 +23,7 @@ const faqData = [
 
 const Questions = () => {
     return (
-        <div className='questions'>
+        <section className='questions'>
             <div className='questions__contener'>
                 <h2>Frequently Asked Questions</h2>
                 <p>
@@ -45,7 +45,7 @@ const Questions = () => {
             </div>
 
 
-        </div>
+        </section>
     );
 };
 

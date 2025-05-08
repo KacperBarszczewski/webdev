@@ -4,7 +4,7 @@ import { Extension } from '../../components';
 
 const Download = () => {
     return (
-        <div className='download'>
+        <section className='download'>
             <div className='download__contener'>
                 <h2>Download the extension</h2>
                 <p>
@@ -14,7 +14,7 @@ const Download = () => {
                 </p>
             </div>
             <Extension />
-        </div>
+        </section>
     );
 };
 

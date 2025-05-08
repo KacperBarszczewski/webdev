@@ -4,7 +4,7 @@ import { TabsSection } from '../../components';
 
 const Features = () => {
     return (
-        <div className='features'>
+        <section className='features'>
             <div className='features__contener'>
                 <h2>Features</h2>
                 <p>
@@ -16,7 +16,7 @@ const Features = () => {
 
             </div>
             <TabsSection />
-        </div>
+        </section>
     );
 };
 

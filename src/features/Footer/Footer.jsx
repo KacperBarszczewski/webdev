@@ -6,7 +6,7 @@ import logoFacebook from '../../assets/images/icon-facebook.svg';
 
 const Footer = () => {
     return (
-        <div className='footer'>
+        <section className='footer'>
             <div className='footer__contener'>
                 <Logo className="footer__contener__logo-svg" />
                 <a>FEATURES</a>
@@ -21,7 +21,7 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
