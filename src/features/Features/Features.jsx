@@ -4,7 +4,7 @@ import { TabsSection } from '../../components';
 
 const Features = () => {
     return (
-        <section className='features'>
+        <section className='features' id='features'>
             <div className='features__contener'>
                 <h2>Features</h2>
                 <p>

@@ -9,9 +9,9 @@ const Footer = () => {
         <section className='footer'>
             <div className='footer__contener'>
                 <Logo className="footer__contener__logo-svg" />
-                <a>FEATURES</a>
+                <a href='#features'>FEATURES</a>
                 <a>PRICING</a>
-                <a>CONTACT</a>
+                <a href='#contact'>CONTACT</a>
                 <div className='footer__contener__socials'>
                     <a href="https://www.facebook.com/" target="_blank">
                         <img src={logoFacebook} alt="Facebook" className='footer__contener__socials__img' />
