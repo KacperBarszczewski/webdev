@@ -4,6 +4,7 @@ import { Download, Features, Hero, Questions, Contact, Footer } from "./features
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
+  const [hasShownModalOnHover, setHasShownModalOnHover] = useState(false);
   const hoverTimeout = useRef(null);
 
   useEffect(() => {
@@ -15,8 +16,10 @@ const App = () => {
   }, []);
 
   const handleTopHover = () => {
+    if (hasShownModalOnHover) return;
     hoverTimeout.current = setTimeout(() => {
       setShowModal(true);
+      setHasShownModalOnHover(true);
     }, 1000);
   };
 

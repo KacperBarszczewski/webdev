@@ -19,6 +19,10 @@
       border-top: solid 1px lightgray;
       position: relative;
       text-align: center;
+
+      &:hover {
+        color: variables.$color-red;
+      }
       
 
 
